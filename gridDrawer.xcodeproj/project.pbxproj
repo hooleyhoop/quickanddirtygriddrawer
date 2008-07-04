@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
+		7304B00C0E1E782C00E3D127 /* SHGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7304B00B0E1E782C00E3D127 /* SHGridView.m */; };
+		7304B0130E1E78BD00E3D127 /* SHGridInspectorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7304B0120E1E78BD00E3D127 /* SHGridInspectorView.m */; };
+		7304B0430E1E7AE400E3D127 /* FScript.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7304B0420E1E7AE400E3D127 /* FScript.framework */; };
+		7304B0820E1E7B1800E3D127 /* GridderAppControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 7304B0810E1E7B1800E3D127 /* GridderAppControl.m */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -22,6 +26,13 @@
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32CA4F630368D1EE00C91783 /* gridDrawer_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gridDrawer_Prefix.pch; sourceTree = "<group>"; };
+		7304B00A0E1E782C00E3D127 /* SHGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SHGridView.h; path = Src/SHGridView.h; sourceTree = "<group>"; };
+		7304B00B0E1E782C00E3D127 /* SHGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SHGridView.m; path = Src/SHGridView.m; sourceTree = "<group>"; };
+		7304B0110E1E78BD00E3D127 /* SHGridInspectorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SHGridInspectorView.h; path = Src/SHGridInspectorView.h; sourceTree = "<group>"; };
+		7304B0120E1E78BD00E3D127 /* SHGridInspectorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SHGridInspectorView.m; path = Src/SHGridInspectorView.m; sourceTree = "<group>"; };
+		7304B0420E1E7AE400E3D127 /* FScript.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FScript.framework; path = /Library/Frameworks/FScript.framework; sourceTree = "<absolute>"; };
+		7304B0800E1E7B1800E3D127 /* GridderAppControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GridderAppControl.h; path = Src/GridderAppControl.h; sourceTree = "<group>"; };
+		7304B0810E1E7B1800E3D127 /* GridderAppControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GridderAppControl.m; path = Src/GridderAppControl.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* gridDrawer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gridDrawer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -32,6 +43,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				7304B0430E1E7AE400E3D127 /* FScript.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +53,12 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				7304B00A0E1E782C00E3D127 /* SHGridView.h */,
+				7304B00B0E1E782C00E3D127 /* SHGridView.m */,
+				7304B0110E1E78BD00E3D127 /* SHGridInspectorView.h */,
+				7304B0120E1E78BD00E3D127 /* SHGridInspectorView.m */,
+				7304B0800E1E7B1800E3D127 /* GridderAppControl.h */,
+				7304B0810E1E7B1800E3D127 /* GridderAppControl.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -48,6 +66,7 @@
 		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7304B0420E1E7AE400E3D127 /* FScript.framework */,
 				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
 			);
 			name = "Linked Frameworks";
@@ -167,6 +186,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				7304B00C0E1E782C00E3D127 /* SHGridView.m in Sources */,
+				7304B0130E1E78BD00E3D127 /* SHGridInspectorView.m in Sources */,
+				7304B0820E1E7B1800E3D127 /* GridderAppControl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
